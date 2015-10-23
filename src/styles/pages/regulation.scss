@@ -1,37 +1,57 @@
 @import '../reset';
-.main-title {
-	font-size: 24px;
-	font-weight:bold;
-	line-height: 42px;
-}
 .container {
 	padding: 10px;
 }
 
-.sub-content {
-	padding: 10px 0;
-}
-.sub-title {
-	font-size: 14px;
-	font-weight:bold;
-	line-height: 30px;
-}
-
-.sub-paragraph {
-		font-size: 16px;
-		line-height: 24px;
-		padding:6px 0;
-}
-
-.item-list {
-	line-height: 24px;
+.main-title {
 	font-size: 16px;
-	padding:6px 0;
+	font-weight:bold;
+	line-height: 42px;
+	color: #333;
 }
+
+.content {
+	font-size: 12px;
+
+	.anthor {
+		text-align: justify;
+		&:after {
+			content: '';	
+			display: inline-block;
+			height: 0;
+			width: 100%;
+		}
+		.anthor-one {
+			display: inline-block;
+		}
+		.anthor-two {
+			display: inline-block;	
+		}
+	}
+	
+	.info {
+		color: #777;
+		line-height: 20px;	
+	}
+
+	.item-list {
+		padding-left: 20px;
+	}
+
+	.item {
+		color: #888;
+		list-style: inherit;	
+		font-size: 12px;
+		line-height: 20px;
+		margin-top: 10px;
+	}
+}
+
 
 .last-modify {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
-	margin-top: 16px;
+	margin-top: 20px;
+	color: #333;
 }
 

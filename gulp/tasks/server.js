@@ -19,6 +19,9 @@ gulp.task('server', () => {
 	server.get('/regulation', (req, res) => {
 		res.sendFile('regulation.html', {root: 'dist'});	
 	});
+	server.get('/illustrate', (req, res) => {
+		res.sendFile('illustrate.html', {root: 'dist'});	
+	});
 	/*
 	server.all('/*', (req, res) => {
 		res.sendFile('valuation.html', {root: 'dist'});	
