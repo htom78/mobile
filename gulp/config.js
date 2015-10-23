@@ -1,5 +1,5 @@
 'use strict';
-const dest = 'dist';
+const distDir = 'dist';
 module.exports = {
 
 	browserPort: 3000,
@@ -10,19 +10,24 @@ module.exports = {
 	outputName: 'app',
 
 	dest: {
-		root: dest	
+		root: distDir	
 	},
 
 	styles: {
 		src: 'src/styles/pages/*.scss',
-		dest: `${dest}/css`,
+		dest: `${distDir}/css`,
 		prodSourceMap: false,
 		sassIncludePaths: []
 	},
 
 	views: {
 		src: 'src/views/**/*.html',
-		dest: dest	
+		dest: distDir	
+	},
+
+	images: {
+		src: 'src/assets/imgs/**/*',
+		dest: `${distDir}/imgs`
 	}
 
 };

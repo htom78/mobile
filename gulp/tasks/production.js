@@ -3,8 +3,8 @@
 var gulp = require('gulp');
 var runSequence = require('run-sequence');
 
-gulp.task('dev', ['clean'], cb => {
+gulp.task('prod', ['clean'], cb => {
 	cb = cb || function() {};
-	global.isProd = false;
-	runSequence(['styles', 'images', 'views'], 'watch', cb);
+	global.isProd = true;
+	runSequence(['styles', 'images', 'views'], cb);
 });
